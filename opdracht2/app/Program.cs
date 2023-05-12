@@ -38,7 +38,21 @@
 
         static void Main(string[] args)
         {
-            Pokeball pokeball = new Pokeball(false);
+            string? antwoord = "";
+
+            while (antwoord != "quit")
+            {
+                Console.Write("hoe wil je charmander noemen? : ");
+                string? new_name;
+                new_name = Console.ReadLine();
+                Charmander charmander = new Charmander(new_name, "water", "fire");
+                for (int x = 0; x < 10; x++)
+                {
+                    charmander.battleCry();
+                }
+                Console.Write("type quit to stop: ");
+                antwoord = Console.ReadLine();
+            }
 
 
         }
