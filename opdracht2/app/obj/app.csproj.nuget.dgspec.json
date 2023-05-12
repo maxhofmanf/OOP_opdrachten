@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\maxho\\OOP_opdrachten\\opdracht_1\\app\\app.csproj": {}
+    "C:\\Users\\maxho\\OOP_opdrachten\\opdracht2\\app\\app.csproj": {}
   },
   "projects": {
-    "C:\\Users\\maxho\\OOP_opdrachten\\opdracht_1\\app\\app.csproj": {
+    "C:\\Users\\maxho\\OOP_opdrachten\\opdracht2\\app\\app.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\maxho\\OOP_opdrachten\\opdracht_1\\app\\app.csproj",
+        "projectUniqueName": "C:\\Users\\maxho\\OOP_opdrachten\\opdracht2\\app\\app.csproj",
         "projectName": "app",
-        "projectPath": "C:\\Users\\maxho\\OOP_opdrachten\\opdracht_1\\app\\app.csproj",
+        "projectPath": "C:\\Users\\maxho\\OOP_opdrachten\\opdracht2\\app\\app.csproj",
         "packagesPath": "C:\\Users\\maxho\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\maxho\\OOP_opdrachten\\opdracht_1\\app\\obj\\",
+        "outputPath": "C:\\Users\\maxho\\OOP_opdrachten\\opdracht2\\app\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\maxho\\AppData\\Roaming\\NuGet\\NuGet.Config"

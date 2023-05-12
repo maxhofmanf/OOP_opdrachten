@@ -3,8 +3,7 @@
     class Charmander
     {
         string? name;
-        string weakness = "";
-        string strength = "";
+        string strength, weakness = "";
         public Charmander(string? name, string weakness, String strength)
         {
             this.name = name;

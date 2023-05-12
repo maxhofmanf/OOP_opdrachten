@@ -1,11 +1,20 @@
 ﻿namespace game
 {
+    class Pokeball
+    {
+        bool ball_state;
+        public Pokeball(bool ball_state)
+        {
+            this.ball_state = ball_state;
+        }
+
+    }
     class Charmander
     {
         string? name;
-        string weakness = "";
-        string strength = "";
-        public Charmander(string? name, string weakness, String strength)
+        string? weakness;
+        string? strength;
+        public Charmander(string? name, string weakness, string strength)
         {
             this.name = name;
             this.weakness = weakness;
@@ -16,25 +25,22 @@
             Console.WriteLine(this.name + " used battle cry: " + this.name + "!");
         }
     }
+    class Trainer
+    {
+        string? name;
+        public Trainer(string? name)
+        {
+            this.name = name;
+        }
+    }
     class BattleSim
     {
+
         static void Main(string[] args)
         {
+            Pokeball pokeball = new Pokeball(false);
 
-            string? antwoord = "";
-            while (antwoord != "quit")
-            {
-                Console.Write("hoe wil je charmander noemen? : ");
-                string? new_name;
-                new_name = Console.ReadLine();
-                Charmander charmander = new Charmander(new_name, "water", "fire");
-                for (int x = 0; x < 10; x++)
-                {
-                    charmander.battleCry();
-                }
-                Console.Write("type quit to stop: ");
-                antwoord = Console.ReadLine();
-            }
+
         }
     }
 }
