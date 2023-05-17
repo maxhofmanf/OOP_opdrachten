@@ -2,7 +2,7 @@
 {
     class Charmander
     {
-        string? name;
+        public string? name { get; set; }
         string strength, weakness = "";
         public Charmander(string? name, string weakness, string strength)
         {
@@ -20,27 +20,48 @@
     {
         public Charmander? charmander;
 
-        string? pokemon_name;
-        bool status;
+
+        public Pokeball()
+        {
+
+        }
         public void Capture(Charmander charmander)
         {
             this.charmander = charmander;
             Console.WriteLine("Charmander has been captured");
         }
+        public bool checkEmpty()
+        {
+            return this.charmander != null;
+        }
 
     }
     class Trainer
     {
-        string? name;
+        public string? Name { get; set; }
         public List<Pokeball> belt;
-        public Trainer(string? name)
+        public Trainer(string? Name)
         {
-            this.name = name;
+            this.Name = Name;
             belt = new List<Pokeball>();
             for (int i = 0; i < 6; i++)
             {
                 belt.Add(new Pokeball());
-                belt[i].Capture(new Charmander("na", "water", "fire"));
+                belt[i].Capture(new Charmander("sparky", "water", "fire"));
+            }
+        }
+        public void throwball(Trainer trainer)
+        {
+            foreach (Pokeball ball in belt)
+            {
+                if (belt[0].checkEmpty())
+                {
+                    Console.WriteLine("this pokeball is full");
+                }
+                else
+                {
+                    Console.WriteLine("this pokeball is empty.");
+                }
             }
         }
 
@@ -50,18 +71,29 @@
         static void Main(string[] args)
         {
 
-            string? antwoord = "";
-            while (antwoord != "quit")
+            string? answer = "";
+            while (answer != "quit")
             {
                 Console.Write("hoe wil je trainer noemen? : ");
-                string? first_trainer_name;
-                first_trainer_name = Console.ReadLine();
-                Console.Write("hoe wil je tweede trainer noemen? : ");
-                string? second_trainer_name;
-                second_trainer_name = Console.ReadLine();
+                string? new_name1;
+                new_name1 = Console.ReadLine();
 
+                Console.Write("hoe wil je tweede trainer noemen? : ");
+                string? new_name2;
+                new_name2 = Console.ReadLine();
+                Trainer trainer1 = new Trainer(new_name1);
+                Console.WriteLine("pire");
+                Trainer trainer2 = new Trainer(new_name2);
+                for (int x = 0; x < 6; x++)
+                {
+                    Console.WriteLine(trainer1.Name + " sends out " + trainer1.belt[x].charmander?.name);
+                    Console.WriteLine();
+                    Console.WriteLine(trainer1.Name + " sends out " + trainer1.belt[x].charmander?.name);
+                    Console.WriteLine();
+
+                }
                 Console.Write("type quit to stop: ");
-                antwoord = Console.ReadLine();
+                answer = Console.ReadLine();
             }
         }
     }
