@@ -4,7 +4,7 @@
     {
         string? name;
         string strength, weakness = "";
-        public Charmander(string? name, string weakness, String strength)
+        public Charmander(string? name, string weakness, string strength)
         {
             this.name = name;
             this.weakness = weakness;
