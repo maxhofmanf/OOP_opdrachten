@@ -1,0 +1,15 @@
+C:\Users\maxho\OneDrive\Documenten\Bureaublad\OOP_opdrachten\Opdracht_2\Opdracht_2\bin\Debug\net7.0\Opdracht_2.exe
+C:\Users\maxho\OneDrive\Documenten\Bureaublad\OOP_opdrachten\Opdracht_2\Opdracht_2\bin\Debug\net7.0\Opdracht_2.deps.json
+C:\Users\maxho\OneDrive\Documenten\Bureaublad\OOP_opdrachten\Opdracht_2\Opdracht_2\bin\Debug\net7.0\Opdracht_2.runtimeconfig.json
+C:\Users\maxho\OneDrive\Documenten\Bureaublad\OOP_opdrachten\Opdracht_2\Opdracht_2\bin\Debug\net7.0\Opdracht_2.dll
+C:\Users\maxho\OneDrive\Documenten\Bureaublad\OOP_opdrachten\Opdracht_2\Opdracht_2\bin\Debug\net7.0\Opdracht_2.pdb
+C:\Users\maxho\OneDrive\Documenten\Bureaublad\OOP_opdrachten\Opdracht_2\Opdracht_2\obj\Debug\net7.0\Opdracht_2.csproj.AssemblyReference.cache
+C:\Users\maxho\OneDrive\Documenten\Bureaublad\OOP_opdrachten\Opdracht_2\Opdracht_2\obj\Debug\net7.0\Opdracht_2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\maxho\OneDrive\Documenten\Bureaublad\OOP_opdrachten\Opdracht_2\Opdracht_2\obj\Debug\net7.0\Opdracht_2.AssemblyInfoInputs.cache
+C:\Users\maxho\OneDrive\Documenten\Bureaublad\OOP_opdrachten\Opdracht_2\Opdracht_2\obj\Debug\net7.0\Opdracht_2.AssemblyInfo.cs
+C:\Users\maxho\OneDrive\Documenten\Bureaublad\OOP_opdrachten\Opdracht_2\Opdracht_2\obj\Debug\net7.0\Opdracht_2.csproj.CoreCompileInputs.cache
+C:\Users\maxho\OneDrive\Documenten\Bureaublad\OOP_opdrachten\Opdracht_2\Opdracht_2\obj\Debug\net7.0\Opdracht_2.dll
+C:\Users\maxho\OneDrive\Documenten\Bureaublad\OOP_opdrachten\Opdracht_2\Opdracht_2\obj\Debug\net7.0\refint\Opdracht_2.dll
+C:\Users\maxho\OneDrive\Documenten\Bureaublad\OOP_opdrachten\Opdracht_2\Opdracht_2\obj\Debug\net7.0\Opdracht_2.pdb
+C:\Users\maxho\OneDrive\Documenten\Bureaublad\OOP_opdrachten\Opdracht_2\Opdracht_2\obj\Debug\net7.0\Opdracht_2.genruntimeconfig.cache
+C:\Users\maxho\OneDrive\Documenten\Bureaublad\OOP_opdrachten\Opdracht_2\Opdracht_2\obj\Debug\net7.0\ref\Opdracht_2.dll
