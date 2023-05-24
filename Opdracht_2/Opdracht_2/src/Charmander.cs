@@ -8,8 +8,8 @@ namespace Opdracht_2.src
 {
     internal class Charmander
     {
-        string? name;
-        string strength, weakness = "";
+        public string? name;
+        private string strength, weakness = "";
         public Charmander(string? name, string weakness, string strength)
         {
             this.name = name;

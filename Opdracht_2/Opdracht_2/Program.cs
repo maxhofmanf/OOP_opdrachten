@@ -20,14 +20,13 @@ namespace game
                 string? new_name2;
                 new_name2 = Console.ReadLine();
                 Trainer trainer1 = new Trainer(new_name1);
-                Console.WriteLine("pire");
                 Trainer trainer2 = new Trainer(new_name2);
                 for (int x = 0; x < 6; x++)
                 {
-                    Console.WriteLine("open ball");
+                    
+                    trainer1.ThrowBall(x, trainer1);
+                    trainer1.ThrowBall(x, trainer2);
 
-                    //Console.WriteLine(trainer1.Name + " sends out " + trainer1.ThrowBall(x));
-                    trainer1.ThrowBall(x);
                     //Console.WriteLine(trainer2.Name + " sends out " + trainer1.belt[x].charmander?.name);
 
                     Console.WriteLine();

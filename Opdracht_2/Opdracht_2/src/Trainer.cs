@@ -22,8 +22,9 @@ namespace Opdracht_2.src
                 belt.Add(new Pokeball());
             }
         }
-        public void ThrowBall(int number)
+        public void ThrowBall(int number, Trainer trainer)
         {
+            Console.WriteLine(trainer.Name + " sends out " + belt[number].charmander?.name);
             belt[number].OpenBall();
 
         }

@@ -8,20 +8,16 @@ namespace Opdracht_2.src
 {
     internal class Pokeball
     {
-        public Charmander? charmander;
+        public Charmander charmander;
 
-
-        public void addPokemon()
+        public Pokeball()
         {
-            Charmander charmander = new Charmander("sparky", "water", "fire");
-            this.charmander = charmander;
+            charmander = new Charmander("sparky", "water", "fire");
         }
         public void OpenBall()
-        {
-            if (charmander != null)
-            {
-                charmander.battleCry();
-            }
+        {   
+            charmander.battleCry();  
+
         }
     }
 }
