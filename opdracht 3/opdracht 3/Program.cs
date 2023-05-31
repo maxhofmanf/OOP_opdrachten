@@ -21,14 +21,24 @@ namespace game
                 Trainer trainer2 = new Trainer(new_name2);
                 for (int x = 0; x < 6; x++)
                 {
-
+                    
                     trainer1.ThrowBall(x, trainer1);
-                    trainer1.ThrowBall(x, trainer2);
+                    trainer1.belt[x].pokemon?.battleCry();
+                    Console.WriteLine("");
+                    Console.WriteLine("");
+                    trainer2.ThrowBall(x, trainer2);
+                    trainer2.belt[x].pokemon?.battleCry();
+                    Console.WriteLine("");
+                    Console.WriteLine(trainer1 + " calls back " + trainer1.belt[x].pokemon?.name);
+                    trainer1.belt[x].closes();
+                    Console.WriteLine(trainer2 + " calls back " + trainer2.belt[x].pokemon?.name);
+                    trainer2.belt[x].closes();
 
-                    //Console.WriteLine(trainer2.Name + " sends out " + trainer1.belt[x].charmander?.name);
 
-                    Console.WriteLine();
 
+
+
+                    //trainer1.ThrowBall(x, trainer2);
                 }
                 Console.Write("type quit to stop: ");
                 answer = Console.ReadLine();

@@ -4,22 +4,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace opdracht_3
+
+internal class Pokeball
 {
-    internal class Pokeball
+
+    public Pokemon? pokemon;
+
+    public void Capture(Pokemon pokemon)
     {
-        
-        public Charmander charmander;
-
-        public Pokeball()
-        {
-            charmander = new Charmander("sparky", "water", "fire");
-        }
-        public void OpenBall()
-        {
-            charmander.battleCry();
-
-            
-        }
+        this.pokemon = pokemon;
+    }
+    //public void OpenBall()
+      // {
+      //     pokemon.battleCry();
+     //}
+     public void closes()
+    {
+        Console.WriteLine("pokeball closes");
     }
 }
+

@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Opdracht_2.src
 {
-    internal class Charmander
+    internal class Pokemon
     {
         public string? name;
         private string strength, weakness = "";
-        public Charmander(string? name, string weakness, string strength)
+        public Pokemon(string? name, string weakness, string strength)
         {
             this.name = name;
             this.weakness = weakness;
