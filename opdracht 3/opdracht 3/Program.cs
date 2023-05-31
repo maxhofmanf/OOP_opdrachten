@@ -33,6 +33,7 @@ namespace game
                     trainer1.belt[x].closes();
                     Console.WriteLine(trainer2 + " calls back " + trainer2.belt[x].pokemon?.name);
                     trainer2.belt[x].closes();
+                    Console.WriteLine("");
 
 
 
