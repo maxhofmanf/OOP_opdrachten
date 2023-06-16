@@ -22,9 +22,9 @@ namespace game
                 Trainer trainer2 = new Trainer(new_name2);
                 
                 Arena.Rounds(trainer1, trainer2);
-                
 
 
+                Console.WriteLine("");
                 Console.Write("type quit to stop: ");
                 answer = Console.ReadLine();
             }

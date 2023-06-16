@@ -41,7 +41,6 @@ internal class Trainer
     public void ThrowBall(int number, Trainer trainer)
     {
         Console.WriteLine(trainer.Name + " sends out " + belt[number].pokemon?.name);
-        //belt[number].OpenBall();
 
     }
 
