@@ -14,14 +14,14 @@ class Battle
         {
             winner = trainer2.Name;
             previous_winner = trainer2.Name;
-            scoreboard[0] += 1;
+            scoreboard[1] += 1;
             defeated_pokemon1 = true;
         }
         else if (trainer1.belt[pokemon_trainer1].pokemon?.strength == trainer2.belt[pokemon_trainer2].pokemon?.weakness)
         {
             winner = trainer1.Name;
             previous_winner = trainer1.Name;
-            scoreboard[1] += 1;
+            scoreboard[0] += 1;
             defeated_pokemon2 = true;
         }
         else
