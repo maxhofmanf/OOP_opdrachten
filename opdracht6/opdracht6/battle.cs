@@ -9,7 +9,10 @@ class Battle
 
         bool defeated_pokemon1 = false;
         bool defeated_pokemon2 = false;
-        
+        foreach(var pokeball in trainer1.belt)
+{
+            Console.WriteLine(pokeball.pokemon?.name);
+        }
         if (trainer1.belt[pokemon_trainer1].pokemon?.weakness == trainer2.belt[pokemon_trainer2].pokemon?.strength)
         {
             winner = trainer2.Name;
