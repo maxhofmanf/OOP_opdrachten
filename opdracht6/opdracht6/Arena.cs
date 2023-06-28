@@ -24,7 +24,7 @@ class Arena
         }
         else if (scoreboard[1] > scoreboard[0])
         {
-            Console.Write(trainer2.Name + " won with " + scoreboard[1] + "points");
+            Console.Write(trainer2.Name + " won with " + scoreboard[1] + " points");
         } else
         {
             Console.WriteLine("Nobody wins, its a draw");

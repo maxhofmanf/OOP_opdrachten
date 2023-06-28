@@ -15,9 +15,12 @@ public enum Type
 
 abstract class Pokemon
 {
+    private Type strength;
+    private Type weakness;
+    public Type getStrength() { return strength; }
+    public Type getWeakness() { return weakness; }
     public string name;
-    public Type strength;
-    public Type weakness;
+   
 
     public Pokemon(string name, Type strength, Type weakness)
     {

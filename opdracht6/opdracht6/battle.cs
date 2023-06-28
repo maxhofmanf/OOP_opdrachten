@@ -9,18 +9,15 @@ class Battle
 
         bool defeated_pokemon1 = false;
         bool defeated_pokemon2 = false;
-        foreach(var pokeball in trainer1.belt)
-{
-            Console.WriteLine(pokeball.pokemon?.name);
-        }
-        if (trainer1.belt[pokemon_trainer1].pokemon?.weakness == trainer2.belt[pokemon_trainer2].pokemon?.strength)
+        
+        if (trainer1.belt[pokemon_trainer1].pokemon?.getWeakness() == trainer2.belt[pokemon_trainer2].pokemon?.getStrength())
         {
             winner = trainer2.Name;
             previous_winner = trainer2.Name;
             scoreboard[1] += 1;
             defeated_pokemon1 = true;
         }
-        else if (trainer1.belt[pokemon_trainer1].pokemon?.strength == trainer2.belt[pokemon_trainer2].pokemon?.weakness)
+        else if (trainer1.belt[pokemon_trainer1].pokemon?.getStrength() == trainer2.belt[pokemon_trainer2].pokemon?.getWeakness())
         {
             winner = trainer1.Name;
             previous_winner = trainer1.Name;
