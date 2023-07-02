@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Runtime.InteropServices;
 
 namespace game
@@ -22,7 +23,7 @@ namespace game
                 Trainer trainer2 = new Trainer(new_name2);
                 
                 Arena.Rounds(trainer1, trainer2);
-
+                PokemonCenter.Healing(trainer1, trainer2);   
 
                 Console.WriteLine("");
                 Console.Write("type quit to stop: ");

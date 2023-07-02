@@ -1,7 +1,7 @@
 
 class Battle
 {
-    public static string previous_winner;
+    public static string? previous_winner;
 
     public static void Fight(Trainer trainer1, Trainer trainer2, int[] scoreboard, ref int pokemon_trainer1, ref int pokemon_trainer2)
     {
@@ -12,6 +12,8 @@ class Battle
         
         if (trainer1.belt[pokemon_trainer1].pokemon?.getWeakness() == trainer2.belt[pokemon_trainer2].pokemon?.getStrength())
         {
+            trainer1.belt[pokemon_trainer1].pokemon.status = false;
+
             winner = trainer2.Name;
             previous_winner = trainer2.Name;
             scoreboard[1] += 1;
@@ -19,10 +21,15 @@ class Battle
         }
         else if (trainer1.belt[pokemon_trainer1].pokemon?.getStrength() == trainer2.belt[pokemon_trainer2].pokemon?.getWeakness())
         {
+            trainer2.belt[pokemon_trainer2].pokemon.status = false;
+
             winner = trainer1.Name;
             previous_winner = trainer1.Name;
             scoreboard[0] += 1;
             defeated_pokemon2 = true;
+
+            
+                
         }
         else
         {
@@ -50,36 +57,52 @@ class Battle
 
                 Console.WriteLine(trainer2.Name + " calls back " + trainer2.belt[pokemon_trainer2].pokemon?.name);
                 trainer2.belt[pokemon_trainer2].closes();
+                trainer1.belt[pokemon_trainer1].pokemon.status = false;
+                trainer2.belt[pokemon_trainer2].pokemon.status = false;
                 pokemon_trainer1 += 1;
+                pokemon_trainer2 += 1;
             } else if(previous_winner == trainer1.Name)
             {
                 Console.WriteLine(trainer2.Name + " calls back " + trainer2.belt[pokemon_trainer2].pokemon?.name);
                 trainer2.belt[pokemon_trainer2].closes();
+                trainer2.belt[pokemon_trainer2].pokemon.status = false;
+
                 pokemon_trainer2 += 1;
+
+
             }
             else if (previous_winner == trainer2.Name)
             {
                 Console.WriteLine(trainer1.Name + " calls back " + trainer1.belt[pokemon_trainer1].pokemon?.name);
                 trainer1.belt[pokemon_trainer1].closes();
+                trainer1.belt[pokemon_trainer1].pokemon.status = false;
+
                 pokemon_trainer1 += 1;
+
+
             }
-            
+
         }
         else if (defeated_pokemon1)
         {
             Console.WriteLine(trainer1.Name + " calls back " + trainer1.belt[pokemon_trainer1].pokemon?.name);
             trainer1.belt[pokemon_trainer1].closes();
             defeated_pokemon1 = false;
+            trainer1.belt[pokemon_trainer1].pokemon.status = false;
+
             pokemon_trainer1 += 1;
-            
+
+
         }
         else if (defeated_pokemon2)
         {
             Console.WriteLine(trainer2.Name + " calls back " + trainer2.belt[pokemon_trainer2].pokemon?.name);
             trainer2.belt[pokemon_trainer2].closes();
             defeated_pokemon2 = false;
+            trainer2.belt[pokemon_trainer2].pokemon.status = false;
+
             pokemon_trainer2 += 1;
-            
+
         }
 
     }

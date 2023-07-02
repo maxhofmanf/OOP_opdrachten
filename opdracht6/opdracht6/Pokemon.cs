@@ -17,14 +17,16 @@ abstract class Pokemon
     
     private Type strength;
     private Type weakness;
+    
     public Type getStrength() { return strength; }
     public Type getWeakness() { return weakness; }
     public string name;
+    public bool status;
 
-
-    public Pokemon(string name, Type strength, Type weakness)
+    public Pokemon(string name,bool status, Type strength, Type weakness)
     {
         this.name = name;
+        this.status = status;
         this.strength = strength;
         this.weakness = weakness;
     }
@@ -33,7 +35,7 @@ abstract class Pokemon
 }
 class Charmander : Pokemon
 {
-    public Charmander(string name) : base(name, Type.Fire, Type.Water) { }
+    public Charmander(string name ) : base(name,true, Type.Fire, Type.Water) { }
 
     public override void BattleCry()
     {
@@ -43,7 +45,7 @@ class Charmander : Pokemon
 
 class Bulbasaur : Pokemon
 {
-    public Bulbasaur(string name) : base(name, Type.Leaf, Type.Fire) { }
+    public Bulbasaur(string name) : base(name,true, Type.Leaf, Type.Fire) { }
 
     public override void BattleCry()
     {
@@ -53,7 +55,7 @@ class Bulbasaur : Pokemon
 
 class Squirtle : Pokemon
 {
-    public Squirtle(string name) : base(name, Type.Water, Type.Leaf) { }
+    public Squirtle(string name) : base(name,true, Type.Water, Type.Leaf) { }
 
     public override void BattleCry()
     {
